@@ -1,7 +1,11 @@
 import time
-
+from rich.console import Console
 import requests
 from lxml import html
+
+
+console = Console()
+
 
 respone_block = requests.get("https://ipspeed.info/freevpn_l2tpipsec.php?language=en")
 byte_string = respone_block.content
